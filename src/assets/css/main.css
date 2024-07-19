@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './fonts.css';
+
+@layer base {
+  html,
+  body,
+  :root {
+    /* @apply h-full w-full; */
+    @apply text-neutral-100 dark:text-neutral-800;
+    @apply bg-light dark:bg-dark;
+
+    --color-primary-800: '#0809EC';
+    --color-primary-500: '#8A8BFF';
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
+
+  input[type='number'] {
+    -moz-appearance: textfield; /* Firefox */
+  }
+}
+
+@layer components {
+  /* The set of Typography component classes */
+  .typography-h1 {
+    @apply font-RobotoCondensed text-h1 font-bold leading-h1 tracking-h1;
+  }
+
+  .typography-h2 {
+    @apply font-RobotoCondensed text-h2 font-bold leading-h2 tracking-h2;
+  }
+
+  .typography-h3 {
+    @apply font-RobotoCondensed text-h3 font-bold leading-h3 tracking-h3;
+  }
+
+  .typography-h4 {
+    @apply font-RobotoCondensed text-h4 font-bold leading-h4 tracking-h4;
+  }
+
+  .typography-subtitle {
+    @apply font-RobotoCondensed text-subtitle font-normal leading-subtitle tracking-subtitle;
+  }
+
+  .typography-paragraph {
+    @apply font-RobotoCondensed text-paragraph font-normal leading-paragraph tracking-paragraph;
+  }
+
+  .typography-body {
+    @apply font-RobotoCondensed text-body font-normal leading-body tracking-body;
+  }
+
+  .typography-caption {
+    @apply font-RobotoCondensed text-caption font-normal leading-caption tracking-caption;
+  }
+
+  .typography-small {
+    @apply font-RobotoCondensed text-small font-normal leading-small tracking-small;
+  }
+
+  .typography-sm {
+    @apply font-Roboto text-sm font-normal leading-sm tracking-sm;
+  }
+
+  .typography-md {
+    @apply font-Roboto text-md font-normal leading-md tracking-md;
+  }
+
+  .typography-lg {
+    @apply font-Roboto text-lg font-normal leading-lg tracking-lg;
+  }
+}
