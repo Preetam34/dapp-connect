@@ -22,12 +22,16 @@
     "@types/node": "20.4.1",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
+    "@wagmi/connectors": "^5.0.26",
+    "@wagmi/core": "^2.12.2",
+    "@walletconnect/client": "^1.8.0",
     "@web3modal/wagmi": "^4.2.1",
     "autoprefixer": "^10.4.19",
     "axios": "^1.6.8",
     "encoding": "^0.1.13",
     "eslint": "8.44.0",
     "eslint-config-next": "^14.2.3",
+    "ethers": "^6.13.1",
     "next": "^14.2.3",
     "next-themes": "^0.2.1",
     "pino-pretty": "^11.0.0",
@@ -41,7 +45,8 @@
     "tw-elements": "^2.0.0",
     "typescript": "5.1.6",
     "viem": "^2.10.9",
-    "wagmi": "^2.9.2"
+    "wagmi": "^2.11.2",
+    "web3": "^4.11.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.7",
