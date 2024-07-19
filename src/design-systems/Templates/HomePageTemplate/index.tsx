@@ -32,13 +32,13 @@ const HomePageTemplate: React.FC = () => {
   const connectWallet = async () => {
     if (window.ethereum) {
       try {
-        console.log('Requesting accounts...');
+        // console.log('Requesting accounts...');
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-        console.log('Accounts:', accounts);
+        // console.log('Accounts:', accounts);
         if (accounts.length > 0) {
           setAddress(accounts[0]);
           setIsConnected(true);
-          console.log('Connected:', accounts[0]);
+          // console.log('Connected:', accounts[0]);
         } else {
           console.error('No accounts found');
         }
@@ -61,9 +61,7 @@ const HomePageTemplate: React.FC = () => {
 
   return (
     <div className="layout">
-      <header>
-        <h1>Header</h1>
-      </header>
+
       <main>
         <h1>Homepage</h1>
         <div className="mt-6 flex justify-center">
@@ -77,9 +75,7 @@ const HomePageTemplate: React.FC = () => {
           )}
         </div>
       </main>
-      <footer>
-        <h1>Footer</h1>
-      </footer>
+ 
       <style jsx>{`
         .connect-button, .disconnect-button {
           padding: 10px 20px;
