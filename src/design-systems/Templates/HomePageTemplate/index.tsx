@@ -31,12 +31,12 @@ const HomePageTemplate: React.FC = () => {
   const connectWallet = async () => {
     if (window.ethereum) {
       try {
-        console.log('Requesting accounts...')
+        // console.log('Requesting accounts...')
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
-        console.log('Accounts:', accounts)
+        // console.log('Accounts:', accounts)
         setAddress(accounts[0])
         setIsConnected(true)
-        console.log('Connected:', accounts[0])
+        // console.log('Connected:', accounts[0])
       } catch (error) {
         console.error('Failed to connect wallet:', error)
       }
