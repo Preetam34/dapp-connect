@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import Web3 from 'web3'
 
 // Ensure the TelegramWebApp type is defined
 interface TelegramWebApp {
